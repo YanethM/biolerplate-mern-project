@@ -1,0 +1,22 @@
+.ui.search.dropdown>.text {
+    cursor: text;
+    position: absolute;
+    left: 14px;
+    z-index: 3;
+    top: 11px;
+}
+
+.dropdown-input {
+    input {
+        box-shadow: none;
+        border: none !important;
+        background: transparent !important;
+    }
+
+    .input {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 4;
+    }
+}

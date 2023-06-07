@@ -1,0 +1,18 @@
+@import '~/scss/index.scss';
+
+.login-form {
+    font-family: Arial, sans-serif;
+
+    &__error {
+        font-family: Arial, sans-serif;
+
+        color: $error !important;
+        text-align: center;
+    }
+    &__sucess{
+        font-family: Arial, sans-serif;
+
+        color: $info !important;
+        text-align: center;
+    }
+}

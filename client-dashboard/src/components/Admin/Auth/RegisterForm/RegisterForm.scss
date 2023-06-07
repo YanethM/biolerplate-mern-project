@@ -1,0 +1,64 @@
+@import '~/src/scss/index.scss';
+
+.register-form {
+    font-family: Arial, sans-serif;
+
+    &__error {
+        font-family: Arial, sans-serif;
+
+        color: $error !important;
+        text-align: center;
+    }
+
+    &__success {
+        font-family: Arial, sans-serif;
+        color: $success !important;
+        text-align: center;
+    }
+}
+
+.register-form input,
+.register-form textarea,
+.register-form select .register-form button {
+    font-family: Arial, sans-serif;
+}
+
+.terms-checkbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Agrega esto si también quieres centrarlo horizontalmente */
+    height: auto;
+    /* Ajusta esto según sea necesario */
+}
+
+button.ui.button.terms-button {
+    margin-right: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.ui.search.dropdown>.text {
+    cursor: text;
+    position: absolute;
+    left: 14px;
+    z-index: 3;
+    top: 11px;
+}
+
+
+
+.dropdown-input {
+    input {
+        box-shadow: none;
+        border: none !important;
+        background: transparent !important;
+    }
+
+    .input {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 4;
+    }
+}

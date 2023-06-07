@@ -1,0 +1,160 @@
+@import '~/src/scss/index.scss';
+
+$color-primary: #2c3e50;
+$color-background: #ffffff;
+$color-box-shadow: rgba(0, 0, 0, 0.04);
+$font-size-heading: 20px;
+$font-size-body: 14px;
+$border-radius: 5px;
+
+.modalTermsHeader {
+    background: white;
+    text-align: center;
+    overflow: hidden;
+    border-top-left-radius: $border-radius;
+    border-top-right-radius: $border-radius;
+    height: 55px;
+
+    .heading {
+        color: $color-primary;
+        font-weight: 500;
+        font-size: $font-size-heading;
+        text-align: center;
+    }
+}
+
+
+.centeredTerms {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 700px;
+}
+
+.modalTerms {
+    background: white;
+    color: white;
+    z-index: 10;
+    border-radius: 8px;
+    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.04);
+}
+
+.scrollableContent {
+    margin-left: 20px;
+    margin-right: 20px;
+    display: block;
+    width: 95%;
+    height: 100%;
+    padding: 6px;
+    border-radius: 8px;
+    background: #fcfcfc;
+    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.04);
+    overflow-y: auto;
+}
+
+.modalTermsBody {
+    height: 600px;
+    padding: 5px;
+    border-radius: 5px;
+    p {
+        position: relative;
+        font-size: $font-size-body;
+        color: black;
+        background: linear-gradient(#e9ebf0, #ffffff);
+        border-radius: 4px;
+        margin: 0;
+        width: 100%;
+        max-height: 600px;
+        bottom: 30px;
+        padding: 10px;
+    }
+
+    .item {
+        font-size: $font-size-body;
+        width: 100%;
+        text-align: center;
+        color: #fff;
+
+        p {
+            color: $color-primary;
+        }
+    }
+}
+
+.closeBtnTermsModal {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 10px;
+    padding: 0;
+    border: none;
+    background: none;
+    box-shadow: none;
+    color: rgba(0, 0, 0, 0.85);
+    font-size: 1.2em;
+    cursor: pointer;
+    outline: none;
+}
+
+.ui button .closeBtnTermsModal {
+    padding: 0;
+    border: none;
+    background: none;
+    box-shadow: none;
+    color: rgba(0, 0, 0, 0.85);
+    font-size: 1.2em;
+    cursor: pointer;
+    outline: none;
+}
+
+.closeBtnTermsModal:hover {
+    box-shadow: 0 5px 20px 0 rgba(172, 130, 130, 0.04);
+}
+
+.darkBG {
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+    top: 39%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+  }
+
+.modalTermsContent {
+    position: relative;
+}
+
+.acceptanceSection {
+    /* Ajusta el valor según sea necesario */
+    background-color: #ffffff;
+    padding: 10px;
+    
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+    p {
+        color: $color-primary;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+
+    .item {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .messageContainer {
+        max-height: 100px; // Establece la altura máxima deseada
+        overflow-y: auto; // Agrega desplazamiento vertical si el contenido excede la altura máxima
+    }
+}
+
+.acceptanceSection .item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
